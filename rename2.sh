@@ -1,5 +1,5 @@
 	x=1; 
-	for i in $(ls *jpg); 
+	for i in $(ls *JPG); 
 	  do 
 	    counter=$(printf %04d $x); 
 	    mv "$i" GOPR"$counter".JPG; 
