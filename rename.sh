@@ -1,8 +1,7 @@
 	x=1; 
-	for i in $(ls tmp/*JPG); 
+	for i in $(ls *JPG); 
 	  do 
-	    counter=$(printf %05d $x); 
-	    echo "Renaming $i to proc-$counter.JPG";
-	    mv "$i" tmp/proc-"$counter".JPG; 
+	    counter=$(printf %04d $x); 
+	    mv "$i" GOPR"$counter".JPG; 
 	    x=$(($x+1)); 
 	  done
