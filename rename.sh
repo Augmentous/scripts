@@ -1,3 +1,5 @@
+#!/bin/bash
+
 	x=1; 
 	for i in $(ls *JPG); 
 	  do 
